@@ -1,981 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BIKADE-BUY&RENT</title>
-    <link rel="stylesheet" href="./BIKADE-BUY&RENT.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BIKADE | Buy & Rent</title>
 
-    <script defer src="./BIKADE-BUY&RENT.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script>
-  (function(){
-    emailjs.init("YOUR_PUBLIC_KEY");
-  })();
-   </script>
+  <!-- LINK TO CSS -->
+  <link rel="stylesheet" href="/BIKADE-BUY&RENT.css">
+
+  <!-- EMAIL JS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("YOUR_PUBLIC_KEY");
+    })();
+  </script>
+</head>
+<body>
+
+<!-- LOGIN PROTECTION -->
+
+<header class="cont-1">
+  <h1>BIKADE</h1>
+  <h4>bal:₦200,000</h4>
+  <!-- <div class="cart-container">
+    <span id="cart-icon">0</span>
+    🛒
+  </div> -->
 
 
-  </head>
-  <body>
-    <header class="cont-1">
-      <h1>BIKADE</h1>
-      <div class="cart-container">
-        <span id="cart-count">0</span>
-        <img src="./assets folder/icons8-cart-30.png" id="cart-icon" />
-      </div>
-    </header>
+  <span id="user-name"> welcome Angelo</span>
 
-    <div class="sidebar">
-      <a href="./homepage.html" target="_parent">
-        <div class="sidebar-link">
-          <img src="./assets folder/BIKADE home icon.png" alt="" />
-          <div>Home</div>
-        </div>
-      </a>
-      <div class="sidebar-link">
-        <img src="./assets folder/children sidebar icon.png" alt="" />
-        <div>Children</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="./assets folder/teens sidebar bicycle.png" alt="" />
-        <div>Teens</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="./assets folder/adult sidebar icon.png" alt="" />
-        <div>Adult</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="./assets folder/electric bicycle sidebar icon.png" alt="" />
-        <div>E-Bicycle</div>
-      </div>
-    </div>
+  <div class="cart-container" id="cart-icon">🛒 <span id="cart-count">0</span></div>
+</header>
 
-    <div class="cont-2">
-      <p>Buy</p>
-    </div>
+<div class="sidebar">
+  <div class="sidebar-link"><a href="/homepage.html">Home</a></div>
+  <div class="sidebar-link" id="info-btn">Info</div>
+  <div class="sidebar-link" id="all-purchases-sidebar">item <br>bought</div>
+</div>
 
-    <div class="cont-3 chldren">
-      <div class="cont-3i">
-        <div>
-          <img src="./assets folder/bicycle1.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
+<div class="cont-2">Buy</div>
 
-      <div class="cont-3i">
-        <div>
-          <img src="./assets folder/bicycle2.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle3.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle 4.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle5.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle6.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle7.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle8.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle9.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle10.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle11.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle12.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle13.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle14.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle15.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle16.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle17.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle18.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle19.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle20.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle21.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle22.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle23.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-3i">
-        <img src="./assets folder/bicycle24.jpg" alt="" />
-        <div class="text-sec">
-          <p>Age 4 - 6</p>
-          <p>#30,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
+<div class="cont-3" id="product-grid">
+  <!-- This block will be cloned for each product from the backend -->
+  <template id="product-template">
+    <div class="product-item">
+      <img src="" alt="Product Image" class="product-img">
+      <div class="text-sec">
+        <p class="product-age"></p>
+        <p class="product-price"></p>
+        <button class="center-button">Add to Cart</button>
       </div>
     </div>
+  </template>
+</div>
 
-    <div class="cont-4 teens">
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/size 18 children bicycle1.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 18</p>
-          <p>Age 7 - 9</p>
-          <p>#38,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
+<!-- Big Cart Modal -->
+<div id="big-cart-modal" class="big-cart-modal">
+  <button id="close-big-cart" class="close-cart">✖</button>
+  <h3>All Purchases</h3>
+  <div id="big-cart-items"></div>
+  <h4 id="big-cart-total">Total: ₦0</h4>
+  <button id="big-cart-clear">Clear Purchases</button>
+</div>
 
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/size 18 children bicycle2.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 18</p>
-          <p>Age 7 - 9</p>
-          <p>#38,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
 
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/size 18 children bicycle3.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 18</p>
-          <p>Age 7 - 9</p>
-          <p>#38,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
 
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/size 18 children bicycle4.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 18</p>
-          <p>Age 7 - 9</p>
-          <p>#38,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
 
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/size 18 children bicycle5.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 18</p>
-          <p>Age 7 - 9</p>
-          <p>#38,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
+<!-- Info Modal -->
+<div id="info-modal" class="info-modal">
+  <div class="info-content">
+    <button id="close-info" class="close-info">✖</button>
+    <h3>Contact Us</h3>
+    <br>
+    <p>to add to bal</p>
+    <p>Add this number on WhatsApp to chat:</p>
+    <p><strong>+234 800 123 4567</strong></p>
+  </div>
+</div>
 
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/size 18 children bicycle6.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 18</p>
-          <p>Age 7 - 9</p>
-          <p>#38,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
+<!-- CART -->
+<div id="cart-dropdown" class="cart-dropdown">
+  <button id="close-cart" class="close-cart">✖</button>
+  <h3>Your Cart</h3>
+  <div id="cart-items"></div>
+  <h4 id="cart-total">Total: ₦0</h4>
 
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/size 18 children bicycle7.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 18</p>
-          <p>Age 7 - 9</p>
-          <p>#38,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
+  <!-- Payment Inputs -->
+  <div class="payment-inputs">
+    <label for="account-name">Account Name</label>
+    <input type="text" id="account-name" placeholder="Enter your name" required />
 
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/size 18 children bicycle8.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 18</p>
-          <p>Age 7 - 9</p>
-          <p>#38,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
+    <label for="account-number">Account Number</label>
+    <input type="text" id="account-number" placeholder="Enter account number" required />
 
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/size 20 front shock1.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 20</p>
-          <p>Age 10 - 16</p>
-          <p>#45,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
+    <label for="account-password">Password</label>
+    <input type="password" id="account-password" placeholder="Enter password" required />
+  </div>
+  <button id="clear-cart">Clear Cart</button>
 
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/size 20 front shock2.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 20</p>
-          <p>Age 10 - 16</p>
-          <p>#45,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
 
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/size 20 front shock3.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 20</p>
-          <p>Age 10 - 16</p>
-          <p>#45,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
+  <button id="pay-btn">Pay</button>
+</div>
 
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/size 20 front shock4.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 20</p>
-          <p>Age 10 - 16</p>
-          <p>#45,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
 
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/size 20 plain1.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 20</p>
-          <p>Age 10 - 16</p>
-          <p>#45,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/size 20 plain2.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 20</p>
-          <p>Age 10 - 16</p>
-          <p>#45,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/size 20 plain3.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 20</p>
-          <p>Age 10 - 16</p>
-          <p>#45,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/size 20 plain4.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 20</p>
-          <p>Age 10 - 16</p>
-          <p>#45,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/foldable bicycle1.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 20</p>
-          <p>Age 10 - 16</p>
-          <p>#45,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/foldable bicycle2.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 20</p>
-          <p>Age 10 - 16</p>
-          <p>#45,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/foldable bicycle3.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 20</p>
-          <p>Age 10 - 16</p>
-          <p>#45,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/foldable bicycle4.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 20</p>
-          <p>Age 10 - 16</p>
-          <p>#45,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/teen bicycle1.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 22</p>
-          <p>Age 17 - 20</p>
-          <p>#50,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/teeen bicycle2.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 22</p>
-          <p>Age 17 - 20</p>
-          <p>#50,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/teen bicycle3.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 22</p>
-          <p>Age 17 - 20</p>
-          <p>#50,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/teen bicycle4.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 22</p>
-          <p>Age 17 - 20</p>
-          <p>#50,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/teen bicycle5.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 22</p>
-          <p>Age 17 - 20</p>
-          <p>#50,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/teen bicycle6.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 22</p>
-          <p>Age 17 - 20</p>
-          <p>#50,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/teen bicycle7.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 22</p>
-          <p>Age 17 - 20</p>
-          <p>#50,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-4i">
-        <div>
-          <img src="./assets folder/teen bicycle8.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 22</p>
-          <p>Age 17 - 20</p>
-          <p>#50,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="cont-5 adult">
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 24 ladies bicycle1.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 24</p>
-          <p>#65,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 24 ladies bicycle2.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 24</p>
-          <p>#65,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 24 ladies bicycle3.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 24</p>
-          <p>#65,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 24 ladies bicycle4.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 24</p>
-          <p>#65,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 24 road bicycle1.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 24</p>
-          <p>#65,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 24 road bicycle2.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 24</p>
-          <p>#65,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 24 road bicycle3.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 24</p>
-          <p>#65,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 24 road bicycle4.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 24</p>
-          <p>#65,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 24 mountain bicycle1.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 24</p>
-          <p>#65,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 24 mountain bicycle2.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 24</p>
-          <p>#65,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 24 mountain bicycle3.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 24</p>
-          <p>#65,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 24 mountain bicycle4.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 24</p>
-          <p>#65,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 26 ladies bicycle1.avif" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 26</p>
-          <p>#70,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 26 ladies bicycle2.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 26</p>
-          <p>#70,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 26 ladies bicycle3.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 26</p>
-          <p>#70,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 26 ladies bicycle4.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 26</p>
-          <p>#70,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 26 road bicycle1.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 26</p>
-          <p>#70,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 26 road bicycle2.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 26</p>
-          <p>#70,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 26 road bicycle3.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 26</p>
-          <p>#70,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 26 road bicycle4.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 26</p>
-          <p>#70,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 26 mountain bicycle1.webp" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 26</p>
-          <p>#70,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 26 mountain bicycle2.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 26</p>
-          <p>#70,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 26 mountain bicycle3.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 26</p>
-          <p>#70,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-5i">
-        <div>
-          <img src="./assets folder/size 26 mountain bicycle4.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>Size 26</p>
-          <p>#70,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="cont-6 E-bicycle">
-      <div class="cont-6i">
-        <div>
-          <img src="./assets folder/electric bicycle1.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>#500,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-6i">
-        <div>
-          <img src="./assets folder/electric bicycle2.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>#350,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-6i">
-        <div>
-          <img src="./assets folder/electric bicycle3.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>#350,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-6i">
-        <div>
-          <img src="./assets folder/electric bicycle4.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>#420,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-6i">
-        <div>
-          <img src="./assets folder/electric bicycle5.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>#350,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-6i">
-        <div>
-          <img src="./assets folder/electric bicycle6.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>#450,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-6i">
-        <div>
-          <img src="./assets folder/electric bicycle7.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>#280,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="cont-6i">
-        <div>
-          <img src="./assets folder/electric bicycle8.jpg" alt="" />
-        </div>
-        <div class="text-sec">
-          <p>#370,000</p>
-          <button class="center-button">Add to Cart</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- CART DROPDOWN -->
-    <div id="cart-dropdown" class="cart-dropdown">
-      <h3>Your Cart</h3>
-      <div id="cart-items"></div>
-      <h4 id="cart-total">Total: ₦0</h4>
-
-      <div class="payment-info">
-        <p><strong>Bank:</strong> Opay</p>
-        <p><strong>Account No:</strong> 8111822874</p>
-        <p><strong>Name:</strong> chukwuemeka vincent</p>
-      </div>
-
-      <button id="pay-btn">Pay with Opay</button>
-      <button id="confirm-payment">I Have Paid</button>
-    </div>
-  </body>
+<!-- LINK TO JS -->
+<script src="/BIKADE-BUY&RENT.js"></script>
+</body>
 </html>

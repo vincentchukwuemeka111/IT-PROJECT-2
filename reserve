@@ -1,0 +1,1004 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIKADE.com</title>
+    <link rel="stylesheet" href="./homepage.css" />
+    <script defer src="./homepage.js"></script>
+  </head>
+  <body>
+    <header class="sec-1">
+      <h1>BIKADE</h1>
+      <div class="sec-1i">
+        <button class="thick">Sign-up</button>
+        <button class="black">Login</button>
+        <a href="./BIKADE-BUY&RENT.html" target="_parent"
+          ><button>Buy</button>
+        </a>
+      </div>
+    </header>
+
+    <div class="sec-2">
+      <div class="sec-2i">
+        <h1>
+          BIKADE Buy <br />
+          & Rentals
+        </h1>
+        <h2><span>Nsukka Campus District</span> |</h2>
+        <h3>Explore even the steepest of slope with our bicycles!</h3>
+      </div>
+      <div>
+        <img
+          class="sec-2ii"
+          src="./assets folder/homepage cover img.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="sec-3">
+      <h1 class="sec-31">BIKADE Services</h1>
+      <div class="sec-32i">
+        <div class="sec-32ii">
+          <p class="title">Bike Sale</p>
+          <p>
+            We offer affordable bicycles that are up for sale in varieties of
+            colors and sizes.
+          </p>
+        </div>
+        <div class="sec-32iii">
+          <p class="title">Bike Rentals</p>
+          <p>We also rent bicycles in different sizes and colors.</p>
+        </div>
+        <div class="sec-32iv">
+          <p class="title">Bike Repairs</p>
+          <p>We offer professional bicycle repair and maintenance services.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-4">
+      <h1 class="sec-41">BIKADE Rentals</h1>
+      <div class="sec-42">
+        <div>
+          <img
+            class="sec-42i"
+            src="./assets folder/electric home rent stuff.jpg"
+            alt=""
+          />
+          <div class="text section">
+            <p class="first-text">E-BICYCLE</p>
+            <ul class="second-section">
+              <li>Per hour - <span>#2,000</span></li>
+              <li>Per day - <span>#14,000</span></li>
+              <li>Per week - <span>#40,000</span></li>
+              <li>Per month - <span>#130,000</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <img
+            class="sec-42i"
+            src="./assets folder/BMX cover image.jpg"
+            alt=""
+          />
+          <div class="text section">
+            <p class="first-text">BMX</p>
+            <ul class="second-section">
+              <li>Per hour - <span>#1,000</span></li>
+              <li>Per day - <span>#7,000</span></li>
+              <li>Per week - <span>#30,000</span></li>
+              <li>Per month - <span>#100,000</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <img
+            class="sec-42i"
+            src="./assets folder/cover rent mountain bicycle.jpg"
+            alt=""
+          />
+          <div class="text section">
+            <p class="first-text">MOUNTAIN</p>
+            <ul class="second-section">
+              <li>Per hour - <span>#1,500</span></li>
+              <li>Per day - <span>#9,000</span></li>
+              <li>Per week - <span>#43,000</span></li>
+              <li>Per month - <span>#110,000</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <img
+            class="sec-42i"
+            src="./assets folder/sports bicycle cover image.jpg"
+            alt=""
+          />
+          <div class="text section">
+            <p class="first-text">SPORTS</p>
+            <ul class="second-section">
+              <li>Per Hour - <span>#1,500</span></li>
+              <li>Per Day - <span>#9,000</span></li>
+              <li>Per Week - <span>#43,000</span></li>
+              <li>Per Month - <span>#110,000</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-5">
+      <h1 class="sec-51">BIKADE Terms</h1>
+      <div class="sec-52">
+        <div class="sec-52ii">
+          <p class="title">1. No refund of payment</p>
+          <p>
+            We don't refund money paid to us for our services, ensure you pick
+            the right bicycle that you either want to buy or rent.
+          </p>
+        </div>
+        <div class="sec-52ii">
+          <p class="title">2. Age restrictions</p>
+          <p>
+            If you want to rent a bicycle, you have to be at least 18 years old.
+            As a student, bring your ID card or NIN for identification. Younger
+            participants need to be accompained by a parent or guardian.
+          </p>
+        </div>
+        <div class="sec-52ii">
+          <p class="title">3. Helmets</p>
+          <p>
+            We care for the safety of our clients and that is why we provide
+            helmets that are fitted right to your size, so always be careful on
+            the road!
+          </p>
+        </div>
+        <div class="sec-52ii">
+          <p class="title">4. Damage</p>
+          <p>
+            If you want to rent a bike or any cycling gear, you will be
+            responsible for it until the time of return. The theft and any
+            possible bicycle damage are included.
+          </p>
+        </div>
+        <div class="sec-52ii">
+          <p class="title">5. Returning Equipment</p>
+          <p>
+            Return rented bicycles at least 15 minutes prior to our closing time
+            because we normally close by 8pm.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-6">
+      <h1 class="sec-61">About BIKADE</h1>
+      <div class="sec-62">
+        <div class="sec-62i">
+          <img src="./assets folder/project img.jpg" alt="" />
+        </div>
+        <div class="sec-62ii">
+          <p>
+            We were founded in 2025 by bike enthuasiasts Ezekafor Chukwuemeka
+            vincent and Sir Idris at Lasu CBT. Our proficient team is passionate
+            about bikes and is highly trained to provide clients with the
+            highest level of service. We offer an extensive fleet of bikes and
+            cycling gear for buy and rent.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-7">
+      <h1 class="sec-71">BIKADE Contacts</h1>
+      <div class="sec-72">
+        <p class="sec-72i">
+          Our proficient team is passionate about bicycles and highly trained
+          <br />
+          to provide clients with the highest level of service.
+        </p>
+        <div>
+          <p class="sec-72ii">Contact us via:</p>
+          <div>
+            <a href="https://x.com">
+              <img src="./assets folder/icons8-twitter-30.png" alt="" />
+            </a>
+            <a href="https://m.facebook.com">
+              <img src="./assets folder/icons8-facebook-logo-30.png" alt="" />
+            </a>
+            <a href="https://www.instagram.com">
+              <img src="./assets folder/icons8-instagram-30.png" alt="" />
+            </a>
+          </div>
+          <p>or</p>
+          <div class="sec-72iii">
+            <a href="https://www.whatsapp.com">
+              <img src="./assets folder/icons8-whatsapp-logo-30.png" alt="" />
+            </a>
+            <p>+2348111822874</p>
+          </div>
+        </div>
+        <div class="sec-72iii">
+          <img src="./assets folder/icons8-c-30.png" alt="" />
+          <p>Created by</p>
+        </div>
+        <p class="sec-72iv">All rights reserved.</p>
+      </div>
+    </div>
+
+    <div class="sec-8 cont none">
+      <div class="sec-81">
+        <div class="sec-81i">
+          <p class="bik-text">BIKADE</p>
+          <img
+            class="cancel"
+            src="./assets folder/icons8-cancel-30.png"
+            alt=""
+          />
+        </div>
+        <h2>Sign Up:</h2>
+        <div class="sec-81iii">
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Email" />
+        </div>
+        <h3>Date of birth</h3>
+        <div class="sec-81iv">
+          <label for="day">Day:</label>
+          <select id="day"></select>
+
+          <label for="month">Month:</label>
+          <select id="month"></select>
+
+          <label for="year">Year:</label>
+          <select id="year"></select>
+        </div>
+
+        <h3>password</h3>
+        <div class="sec-81v">
+          <div>
+            <label for="Password">Password:</label>
+            <input type="password" placeholder="Enter Your Password" />
+          </div>
+          <div>
+            <label for="Password">Re-enter Password:</label>
+            <input type="password" placeholder="Confirm Your Password" />
+          </div>
+        </div>
+        <button class="sec-81vi">Next</button>
+      </div>
+    </div>
+
+    <div class="sec-9 cont none">
+      <div class="sec-91">
+        <div class="sec-91i">
+          <p class="bik-text">BIKADE</p>
+          <img
+            class="cancel"
+            src="./assets folder/icons8-cancel-30.png"
+            alt=""
+          />
+        </div>
+        <h2>Log In:</h2>
+        <div class="sec-91iii">
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Email" />
+        </div>
+        <h3>password</h3>
+        <div class="sec-91v">
+          <div>
+            <label for="Password">Password:</label>
+            <input type="password" placeholder="Enter Your Password" />
+          </div>
+          <div>
+            <label for="Password">Re-enter Password:</label>
+            <input type="password" placeholder="Confirm Your Password" />
+          </div>
+        </div>
+        <button class="sec-91vi">Next</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  padding-top: 80px;
+}
+
+p {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sec-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: orange;
+  padding: 5px 70px;
+  background-color: rgb(68, 66, 66);
+
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 60px;
+  z-index: 100;
+}
+
+.sec-1i button {
+  padding: 5px 15px;
+  font-weight: bold;
+  gap: 8px;
+  border-radius: 12px;
+  border: none;
+  color: orange;
+  background-image: linear-gradient(
+    to right,
+    rgb(117, 115, 115),
+    rgb(61, 59, 59)
+  );
+}
+
+.sec-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+.sec-2i {
+  line-height: 40px;
+}
+
+h2 span {
+  color: orange;
+}
+
+.sec-2ii {
+  flex-shrink: 0;
+}
+
+.sec-3 {
+  margin: 20px;
+}
+
+.sec-31 {
+  color: orange;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.sec-32i {
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 5px 70px;
+  line-height: 24px;
+}
+
+.sec-32iii {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 70px 70px;
+  margin-right: 50px;
+  text-align: start;
+}
+
+.title {
+  color: orange;
+  font-weight: bold;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.sec-4 {
+  background-color: black;
+  margin-bottom: 20px;
+  color: rgb(207, 201, 201);
+}
+
+.sec-41 {
+  color: orange;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.sec-42 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 70px;
+  row-gap: 30px;
+  padding: 5px 70px;
+}
+
+.sec-42i {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 25px;
+}
+
+.sec-42 span {
+  color: orange;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.text-section {
+  line-height: 20px;
+}
+
+.first-text {
+  color: rgb(228, 223, 223);
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 11px;
+}
+
+.second-section {
+  /* font-weight: bold; */
+  display: block;
+  gap: 20px;
+}
+
+.sec-5 {
+  padding: 5px 70px;
+  background-color: black;
+}
+
+.sec-51 {
+  display: flex;
+  justify-content: center;
+  color: orange;
+  margin-bottom: 20px;
+}
+
+.sec-52ii {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.sec-6 {
+  padding: 5px 70px;
+}
+
+.sec-61 {
+  color: orange;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.sec-62 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sec-62i img {
+  width: 100%;
+  height: 490px;
+}
+
+.sec-62ii {
+  font-size: 15px;
+  width: 500px;
+  line-height: 28px;
+}
+
+.sec-7 {
+  color: orange;
+  padding: 5px 70px;
+  background-color: rgb(17, 17, 17);
+}
+
+.sec-71 {
+  color: orange;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.sec-72 {
+  text-align: center;
+  line-height: 30px;
+}
+
+.sec-72i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  line-height: 20px;
+  color: white;
+}
+
+.sec-72iii {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec-72iii p {
+  color: white;
+}
+
+.sec-72iv {
+  color: white;
+}
+
+.sec-81 {
+  width: 50%;
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.cancel {
+  height: 20px;
+}
+
+.sec-81 h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.sec-81 h3 {
+  font-weight: bold;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.cont {
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.none {
+  display: none;
+}
+
+.sec-81i {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bik-text {
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0 auto;
+  color: orange;
+}
+
+.sec-81iii input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+
+  width: 100%;
+  padding: 10px;
+  margin-left: 3px;
+  margin-bottom: 20px;
+  background-color: black;
+  border-style: solid;
+  border-color: rgba(128, 128, 128, 0.377);
+  border-width: 0.5px;
+  color: white;
+}
+
+.sec-81iv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.sec-81v {
+  display: block;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.sec-81v input {
+  width: 100%;
+  padding: 10px;
+  margin-left: 3px;
+  margin-bottom: 10px;
+  background-color: black;
+  border-style: solid;
+  border-color: rgba(128, 128, 128, 0.377);
+  border-width: 0.5px;
+  color: white;
+}
+
+.sec-81vi {
+  width: 100%;
+  border-radius: 15px;
+  font-weight: bold;
+  padding: 2px 3px;
+}
+
+.sec-91 {
+  width: 50%;
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.sec-91 h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.sec-91 h3 {
+  font-weight: bold;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.cont {
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(127, 124, 124, 0.745);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.none {
+  display: none;
+}
+
+.sec-91i {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sec-91iii input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+
+  width: 100%;
+  padding: 10px;
+  margin-left: 3px;
+  margin-bottom: 20px;
+  background-color: black;
+  border-style: solid;
+  border-color: rgba(128, 128, 128, 0.377);
+  border-width: 0.5px;
+  color: white;
+}
+
+.sec-91v {
+  display: block;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.sec-91v input {
+  width: 100%;
+  padding: 10px;
+  margin-left: 3px;
+  margin-bottom: 10px;
+  background-color: black;
+  border-style: solid;
+  border-color: rgba(128, 128, 128, 0.377);
+  border-width: 0.5px;
+  color: white;
+}
+
+.sec-91vi {
+  width: 100%;
+  border-radius: 15px;
+  font-weight: bold;
+  padding: 2px 3px;
+}
+
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+  body {
+    padding-top: 60px;
+  }
+
+  .sec-1 {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .sec-2 {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .sec-32i,
+  .sec-62 {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .sec-62ii {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Tablet devices (601px – 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .sec-1 {
+    padding: 10px 40px;
+  }
+
+  .sec-2 {
+    flex-direction: column;
+    padding: 30px 40px;
+    text-align: center;
+  }
+
+  .sec-32i,
+  .sec-62 {
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 40px;
+  }
+
+  .sec-62ii {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  img {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+/* Laptop/Desktop devices (901px and above) */
+@media (min-width: 901px) {
+  .sec-1 {
+    padding: 5px 70px;
+  }
+
+  .sec-2,
+  .sec-32i,
+  .sec-62 {
+    flex-direction: row;
+  }
+
+  .sec-62ii {
+    width: 500px;
+  }
+}
+
+
+
+
+
+
+
+
+
+const daySelect = document.getElementById("day");
+const monthSelect = document.getElementById("month");
+const yearSelect = document.getElementById("year");
+
+// Populate months
+const months = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+months.forEach((month, index) => {
+  const option = document.createElement("option");
+  option.value = index + 1;
+  option.text = month;
+  monthSelect.appendChild(option);
+});
+
+// Populate years (e.g., 1950 to current year)
+const currentYear = new Date().getFullYear();
+for (let year = currentYear; year >= 1950; year--) {
+  const option = document.createElement("option");
+  option.value = year;
+  option.text = year;
+  yearSelect.appendChild(option);
+}
+
+// Populate days based on month and year
+function populateDays() {
+  daySelect.innerHTML = "";
+
+  const month = parseInt(monthSelect.value);
+  const year = parseInt(yearSelect.value);
+
+  const daysInMonth = new Date(year, month, 0).getDate();
+
+  for (let day = 1; day <= daysInMonth; day++) {
+    const option = document.createElement("option");
+    option.value = day;
+    option.text = day;
+    daySelect.appendChild(option);
+  }
+}
+
+// Initialize days
+populateDays();
+
+// Update days when month or year changes
+monthSelect.addEventListener("change", populateDays);
+yearSelect.addEventListener("change", populateDays);
+
+
+const sec8= document.querySelector(".sec-8");
+const sec9 = document.querySelector(".sec-9");
+const signUpBtn = document.querySelector(".thick");
+const logInBtn= document.querySelector(".black");
+
+const cancelBtns = document.querySelectorAll(".cancel");
+const cancel2 = cancelBtns[0]
+const cancel3 = cancelBtns[1]
+
+signUpBtn.addEventListener("click", function(e){
+  e.preventDefault()
+  sec8.classList.remove("none")
+})
+
+cancel2.addEventListener("click",function(){
+  sec8.classList.add("none")
+})
+
+logInBtn.addEventListener('click', function (e) {
+  e.preventDefault()
+  sec9.classList.remove("none")
+})
+
+cancel3.addEventListener("click",function(){
+  sec9.classList.add("none")
+})
+
+
+
+
+
+
+//this is for the forms 
+ <!-- <div class="sec-8 cont none">
+      <div class="sec-81">
+        <div class="sec-81i">
+          <p class="bik-text">BIKADE</p>
+          <img
+            class="cancel"
+            src="./assets folder/icons8-cancel-30.png"
+            alt=""
+          />
+        </div>
+        <h2>Sign Up:</h2>
+        <div class="sec-81iii">
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Email" />
+        </div>
+        <h3>Date of birth</h3>
+        <div class="sec-81iv">
+          <label for="day">Day:</label>
+          <select id="day"></select>
+
+          <label for="month">Month:</label>
+          <select id="month"></select>
+
+          <label for="year">Year:</label>
+          <select id="year"></select>
+        </div>
+
+        <h3>password</h3>
+        <div class="sec-81v">
+          <div>
+            <label for="Password">Password:</label>
+            <input type="password" placeholder="Enter Your Password" />
+          </div>
+          <div>
+            <label for="Password">Re-enter Password:</label>
+            <input type="password" placeholder="Confirm Your Password" />
+          </div>
+        </div>
+        <button class="sec-81vi">Next</button>
+      </div>
+    </div> -->
+
+    <!-- <div class="sec-9 cont none">
+      <div class="sec-91">
+        <div class="sec-91i">
+          <p class="bik-text">BIKADE</p>
+          <img
+            class="cancel"
+            src="./assets folder/icons8-cancel-30.png"
+            alt=""
+          />
+        </div>
+        <h2>Log In:</h2>
+        <div class="sec-91iii">
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Email" />
+        </div>
+        <h3>password</h3>
+        <div class="sec-91v">
+          <div>
+            <label for="Password">Password:</label>
+            <input type="password" placeholder="Enter Your Password" />
+          </div>
+          <div>
+            <label for="Password">Re-enter Password:</label>
+            <input type="password" placeholder="Confirm Your Password" />
+          </div>
+        </div>
+        <button class="sec-91vi">Next</button>
+      </div>
+    </div> -->

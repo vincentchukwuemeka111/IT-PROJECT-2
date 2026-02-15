@@ -50,6 +50,10 @@ a {
   );
 }
 
+.sec-1i a{
+  color:orange;
+}
+
 .sec-2 {
   display: flex;
   flex-direction: row;
@@ -241,6 +245,7 @@ h2 span {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .sec-72iii p {
