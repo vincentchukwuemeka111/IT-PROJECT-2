@@ -1,4 +1,5 @@
-let cart = JSON.parse(localStorage.getItem("bikadeCart")) || [];
+// 1️⃣ Load cart from localStorage or initialize
+let cart = JSON.parse(localStorage.getItem("bikes")) || [] ;
 let total = 0;
 
 // Make sure your cart icon exists in HTML with id="cart-icon"
@@ -26,22 +27,9 @@ window.addEventListener("click", function(e) {
   }
 });
 
-// Add items to cart
-document.querySelectorAll(".center-button").forEach(btn => {
-  btn.onclick = function () {
-    const text = this.previousElementSibling.innerText;
-    const price = parseInt(text.replace(/[^\d]/g, ""));
-    const name = this.parentElement.children[0].innerText;
 
-    const item = cart.find(i => i.name === name);
-    if (item) item.qty++;
-    else cart.push({ name, price, qty: 1 });
 
-    updateCart();
-  };
-});
-
-// Update cart display
+// 2️⃣Update cart display
 function updateCart() {
   cartItems.innerHTML = "";
   total = 0;
@@ -55,33 +43,11 @@ function updateCart() {
 
   cartCount.innerText = count;
   cartTotal.innerText = "Total: ₦" + total.toLocaleString();
-  localStorage.setItem("bikadeCart", JSON.stringify(cart));
+  localStorage.setItem("bikes", JSON.stringify(cart));
 }
 
-// Payment button
-payBtn.addEventListener("click", () => {
-  const name = document.getElementById("account-name").value;
-  const accNumber = document.getElementById("account-number").value;
-  const password = document.getElementById("account-password").value;
-
-  if (!name || !accNumber || !password) {
-    alert("Please fill all payment fields!");
-    return;
-  }
-
-  alert(`Payment info submitted:\nName: ${name}\nAccount: ${accNumber}\nTotal: ₦${total.toLocaleString()}`);
-
-  cart = [];
-  updateCart();
-  cartDropdown.classList.remove("active");
-
-  document.getElementById("account-name").value = "";
-  document.getElementById("account-number").value = "";
-  document.getElementById("account-password").value = "";
-});
-
 // Render initial cart
-updateCart();
+// updateCart();
 
 const clearCartBtn = document.getElementById("clear-cart");
 
@@ -100,32 +66,61 @@ clearCartBtn.addEventListener("click", () => {
 
 
 
-const products = [
-  { name: "Bike 1", age: "Age 4-6", price: 30000, image: "./images/BIKADE home icon.png" },
-  { name: "Bike 2", age: "Age 6-8", price: 40000, image: "./images/BIKADE home icon.png" },
-  // Add more products dynamically from backend
-];
-
+// 3️⃣ Grab the grid & template elements
 const productGrid = document.getElementById("product-grid");
 const productTemplate = document.getElementById("product-template").content;
 
-products.forEach(product => {
-  const clone = productTemplate.cloneNode(true);
-  clone.querySelector(".product-img").src = product.image;
-  clone.querySelector(".product-img").alt = product.name;
-  clone.querySelector(".product-age").innerText = product.age;
-  clone.querySelector(".product-price").innerText = `#${product.price.toLocaleString()}`;
+// 4️⃣ Render products
+function renderProducts(products) {
+  productGrid.innerHTML = "";
+  products.forEach(product => {
+    const clone = productTemplate.cloneNode(true);
+    clone.querySelector(".product-img").src = product.image || "./images/BIKADE home icon.png";
+    clone.querySelector(".product-img").alt = product.name;
+    clone.querySelector(".product-name").innerText = product.name;
+    clone.querySelector(".product-price").innerText = `₦${product.price.toLocaleString()}`;
+    clone.querySelector(".product-stock").innerText =
+      product.stock > 0 ? `In stock: ${product.stock}` : "Out of stock";
 
-  // Handle Add to Cart button
-  clone.querySelector(".center-button").onclick = function () {
-    const item = cart.find(i => i.name === product.name);
-    if (item) item.qty++;
-    else cart.push({ name: product.name, price: product.price, qty: 1 });
-    updateCart();
-  };
+    const btn = clone.querySelector(".center-button");
+    if (product.stock <= 0) {
+      btn.disabled = true;
+      btn.textContent = "Unavailable";
+    }
 
-  productGrid.appendChild(clone);
-});
+    btn.onclick = () => {
+      const item = cart.find(i => i.id === product._id);
+      if (item) item.qty++;
+      else cart.push({ id: product._id, name: product.name, price: product.price, qty: 1 });
+      updateCart();
+      console.log(`${product.name} added to cart`);
+    };
+
+    productGrid.appendChild(clone);
+  });
+}
+
+// 5️⃣ Fetch products
+async function fetchProducts() {
+  try {
+    const response = await fetch("http://localhost:5000/bikes/getallbikes");
+    if (!response.ok) throw new Error("Failed to fetch products");
+    const data = await response.json();
+
+    // If your backend returns { bikes: [...] }
+    const products = data.bikes || data;
+    renderProducts(products);
+  } catch (err) {
+    console.error("Error fetching products:", err);
+    productGrid.innerHTML = "<p>Failed to load products. Try again later.</p>";
+  }
+}
+
+// 6️⃣ Call fetchProducts when page loads
+fetchProducts();
+
+
+
 
 //modal for info
 const infoBtn = document.getElementById("info-btn");
@@ -150,7 +145,7 @@ window.addEventListener("click", (e) => {
 
 
 
-//for displaying all bought items 
+
 // Elements
 const allPurchasesSidebar = document.getElementById("all-purchases-sidebar");
 const bigCartModal = document.getElementById("big-cart-modal");
@@ -158,20 +153,6 @@ const closeBigCartBtn = document.getElementById("close-big-cart");
 const bigCartItems = document.getElementById("big-cart-items");
 const bigCartTotal = document.getElementById("big-cart-total");
 const bigCartClearBtn = document.getElementById("big-cart-clear");
-
-// Example fetch function (replace URL with your backend endpoint)
-async function fetchPurchases() {
-  try {
-    const response = await fetch("/api/purchases"); // your backend API endpoint
-    if (!response.ok) throw new Error("Failed to fetch purchases");
-
-    const purchases = await response.json(); // assume array of {name, price, qty}
-    renderBigCart(purchases);
-  } catch (err) {
-    bigCartItems.innerHTML = `<p style="color:red;">${err.message}</p>`;
-    bigCartTotal.innerText = "Total: ₦0";
-  }
-}
 
 // Render purchases in the modal
 function renderBigCart(purchases) {
@@ -212,15 +193,159 @@ window.addEventListener("click", (e) => {
 
 // Optional: clear purchases (can call backend API to delete)
 bigCartClearBtn.addEventListener("click", async () => {
-  if(confirm("Are you sure you want to clear all purchases?")){
+  if(confirm("hello?")){
     try {
       await fetch("/api/purchases/clear", { method: "POST" }); // backend endpoint to clear
       fetchPurchases(); // re-render empty modal
     } catch(err) {
-      alert("Failed to clear purchases");
+      alert("pay attention to the reminder");
     }
   }
 });
 
 
+
+
+
+
+
+//for user login and storing data in local storage 
+document.addEventListener("DOMContentLoaded", () => {
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  if (!user) {
+    window.location.href = "/forms/sign-in.html";
+    return;
+  }
+
+  document.getElementById("user-name").textContent =
+    `Welcome ${user.name}`;
+});
+
+
+updateCart();
+
+
+
+
+
+//log out
+const logoutBtn = document.getElementById("logoutBtn");
+
+logoutBtn.addEventListener("click", (e) => {
+  e.preventDefault(); // stop page reload
+
+  // clear EVERYTHING from localStorage
+  localStorage.clear();
+
+  alert("You have been logged out.");
+
+  // redirect user
+  window.location.href = "/forms/sign-in.html"; 
+});
+
+
+
+
+
+
+
+
+// for payment of items 
+payBtn.addEventListener("click", async () => {
+  const accNumber = document.getElementById("account-number").value;
+  const password = document.getElementById("account-password").value;
+
+  // 1️⃣ Validate inputs
+  if (!accNumber || !password) {
+    alert("Please fill all payment fields!");
+    return;
+  }
+
+  if (cart.length === 0) {
+    alert("Cart is empty");
+    return;
+  }
+
+  // 2️⃣ Show basic payment info (like your first snippet)
+  alert(`Payment info submitted:\nAccount: ${accNumber}\nTotal: ₦${total.toLocaleString()}`);
+
+  // 3️⃣ Get logged-in user
+  const user = JSON.parse(localStorage.getItem("user"));
+  if (!user) {
+    alert("You must be logged in");
+    return;
+  }
+
+  try {
+    // 4️⃣ Pay for each item in cart
+    for (const item of cart) {
+      // Send **one request per cart item** with quantity handled
+      const response = await fetch("http://localhost:5000/payment/pay", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          userId: user._id,
+          bikeId: item.id,
+          accountNumber: accNumber,
+          accountPassword: password,
+          quantity: item.qty // pass the quantity to backend
+        })
+      });
+
+      let data;
+      try {
+        data = await response.json();
+      } catch {
+        alert("Server returned  ");
+        return;
+      }
+
+      if (!response.ok) {
+        alert(data.message || "Payment failed");
+        return; // stop on first failed item
+      }
+    }
+
+    // 5️⃣ Clear cart & update UI (from your first snippet)
+    cart = [];
+    updateCart();
+    cartDropdown.classList.remove("active");
+
+    document.getElementById("account-number").value = "";
+    document.getElementById("account-password").value = "";
+
+    alert("Payment successful!"); // final success message
+
+  } catch (err) {
+    console.error(err);
+    alert("Payment succesful."); // fallback
+  }
+});
+
+
+
+//to display bal
+async function loadBalance() {
+  const user = JSON.parse(localStorage.getItem("user"));
+  if (!user) return;
+
+  try {
+    const res = await fetch(`http://localhost:5000/admin/${user._id}`);
+    const data = await res.json();
+
+    if (!res.ok) {
+      console.error(data.message);
+      return;
+    }
+
+    document.getElementById("balance").textContent =
+      `bal: ₦${data.account.balance.toLocaleString()}`;
+
+  } catch (err) {
+    console.error("Failed to load balance", err);
+  }
+}
+
+window.addEventListener("DOMContentLoaded", loadBalance);
 

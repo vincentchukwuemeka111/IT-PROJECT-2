@@ -1002,3 +1002,113 @@ cancel3.addEventListener("click",function(){
         <button class="sec-91vi">Next</button>
       </div>
     </div> -->
+
+
+    // // for displaying bikes in dashboard 
+// const products = [
+//   { name: "Bike 1", age: "Age 4-6", price: 30000, image: "./images/BIKADE home icon.png" },
+//   { name: "Bike 2", age: "Age 6-8", price: 40000, image: "./images/BIKADE home icon.png" },
+//   // Add more products dynamically from backend
+// ];
+
+// const productGrid = document.getElementById("product-grid");
+// const productTemplate = document.getElementById("product-template").content;
+
+// products.forEach(product => {
+//   const clone = productTemplate.cloneNode(true);
+//   clone.querySelector(".product-img").src = product.image;
+//   clone.querySelector(".product-img").alt = product.name;
+//   clone.querySelector(".product-age").innerText = product.age;
+//   clone.querySelector(".product-price").innerText = `#${product.price.toLocaleString()}`;
+
+//   // Handle Add to Cart button
+//   clone.querySelector(".center-button").onclick = function () {
+//     const item = cart.find(i => i.name === product.name);
+//     if (item) item.qty++;
+//     else cart.push({ name: product.name, price: product.price, qty: 1 });
+//     updateCart();
+//   };
+
+//   productGrid.appendChild(clone);
+// });
+
+
+// function renderProducts(products) {
+//   productGrid.innerHTML = "";
+
+//   products.forEach(product => {
+//     const clone = productTemplate.cloneNode(true);
+
+//     // Image
+//     clone.querySelector(".product-img").src =
+//       product.image || "./images/BIKADE home icon.png";
+//     clone.querySelector(".product-img").alt = product.name;
+
+//     // Name
+//     clone.querySelector(".product-name").innerText = product.name;
+
+//     // Price
+//     clone.querySelector(".product-price").innerText =
+//       `₦${product.price.toLocaleString()}`;
+
+//     // Stock
+//     const stockText = clone.querySelector(".product-stock");
+//     if (product.stock > 0) {
+//       stockText.innerText = `In stock: ${product.stock}`;
+//     } else {
+//       stockText.innerText = "Out of stock";
+//     }
+
+//     // Add to cart logic
+//     const btn = clone.querySelector(".center-button");
+
+//     if (product.stock <= 0) {
+//       btn.disabled = true;
+//       btn.textContent = "Unavailable";
+//     }
+
+//     btn.onclick = () => {
+//       const item = cart.find(i => i.id === product._id);
+
+//       if (item) item.qty++;
+//       else {
+//         cart.push({
+//           id: product._id,
+//           name: product.name,
+//           price: product.price,
+//           qty: 1
+//         });
+//       }
+
+//       updateCart();
+//     };
+
+//     productGrid.appendChild(clone);
+//   });
+// }
+
+
+// //api to get bikes 
+// // Your cart array
+// let cart = JSON.parse(localStorage.getItem("bikadeCart")) || [];
+
+// // Grab the grid & template elements
+// const productGrid = document.getElementById("product-grid");
+// const productTemplate = document.getElementById("product-template").content;
+
+// // Fetch products from backend
+// async function fetchProducts() {
+//   try {
+//     const response = await fetch("http://localhost:5000/bikes"); // Your backend endpoint
+//     if (!response.ok) throw new Error("Failed to fetch products");
+
+//     const products = await response.json(); // Assuming backend sends array of bike objects
+//     renderProducts(products);
+//   } catch (err) {
+//     console.error("Error fetching products:", err);
+//     productGrid.innerHTML = "<p>Failed to load products. Try again later.</p>";
+//   }
+// }
+
+// // Call the fetch function when the page loads
+// fetchProducts();

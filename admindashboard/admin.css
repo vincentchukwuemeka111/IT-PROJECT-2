@@ -109,12 +109,162 @@ button {
 }
 
 /* LOGOUT BUTTON */
-.admin-link.logout {
+.admin-link-logout {
   background-color: #b00020;
   color: white;
   font-weight: bold;
+  padding:10px;
 }
 
-.admin-link.logout:hover {
+.admin-link-logout:hover {
   background-color: #ff2f2f;
+}
+
+
+/* ===== ADMIN PRODUCTS GRID ===== */
+
+#admin-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Individual product card */
+.admin-product-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.admin-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Product image */
+.admin-product-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Product name */
+.admin-product-card h4 {
+  font-size: 16px;
+  margin: 8px 0;
+  color: orange;
+}
+
+/* Price */
+.admin-product-card p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: white;
+}
+
+/* Delete button */
+.admin-product-card .delete-btn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #e63946;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.admin-product-card .delete-btn:hover {
+  background: #c92d3a;
+}
+
+#products h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+
+
+/* ===== USERS SECTION ===== */
+
+#admin-users-table {
+  margin-top: 20px;
+  background: rgb(188, 180, 180);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Header row */
+.users-header,
+.user-row {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr 1fr;
+  padding: 14px 18px;
+  align-items: center;
+}
+
+.users-header {
+  background: #f5f7fa;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+/* User rows */
+.user-row {
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  color: #444;
+}
+
+.user-row:nth-child(even) {
+  background: rgb(164, 147, 117);
+}
+
+/* Role badge */
+.user-role {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  width: fit-content;
+}
+
+.role-admin {
+  background: #fdecea;
+  color: #c92d3a;
+}
+
+.role-user {
+  background: orange;
+  color: #1d4ed8;
+}
+
+/* Action buttons */
+.user-actions button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.user-actions .delete-btn {
+  background: #e63946;
+  color: #fff;
+}
+
+.user-actions .delete-btn:hover {
+  background: #c92d3a;
 }

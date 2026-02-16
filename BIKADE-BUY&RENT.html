@@ -22,47 +22,56 @@
 
 <header class="cont-1">
   <h1>BIKADE</h1>
-  <h4>bal:₦200,000</h4>
+  <h4 id="balance">bal:₦0</h4>
   <!-- <div class="cart-container">
     <span id="cart-icon">0</span>
     🛒
   </div> -->
 
 
-  <span id="user-name"> welcome Angelo</span>
+  <span id="user-name"> </span>
 
   <div class="cart-container" id="cart-icon">🛒 <span id="cart-count">0</span></div>
 </header>
 
 <div class="sidebar">
-  <div class="sidebar-link"><a href="/homepage.html">Home</a></div>
+  <div class="sidebar-link" id="logout">
+  <a href="#" id="logoutBtn">Logout</a>
+  </div> 
   <div class="sidebar-link" id="info-btn">Info</div>
-  <div class="sidebar-link" id="all-purchases-sidebar">item <br>bought</div>
+  <div class="sidebar-link" id="all-purchases-sidebar">reminder</div>
 </div>
+
 
 <div class="cont-2">Buy</div>
 
+
+<!-- for items -->
 <div class="cont-3" id="product-grid">
-  <!-- This block will be cloned for each product from the backend -->
   <template id="product-template">
     <div class="product-item">
       <img src="" alt="Product Image" class="product-img">
+
       <div class="text-sec">
-        <p class="product-age"></p>
+        <p class="product-name"></p>
         <p class="product-price"></p>
+        <p class="product-stock"></p>
+
         <button class="center-button">Add to Cart</button>
       </div>
     </div>
   </template>
 </div>
 
+
+
 <!-- Big Cart Modal -->
 <div id="big-cart-modal" class="big-cart-modal">
   <button id="close-big-cart" class="close-cart">✖</button>
-  <h3>All Purchases</h3>
+  <h3>buy  item in cart only one at a time</h3>
   <div id="big-cart-items"></div>
-  <h4 id="big-cart-total">Total: ₦0</h4>
-  <button id="big-cart-clear">Clear Purchases</button>
+  <h4 id="big-cart-total">thank you</h4>
+  <button id="big-cart-clear"></button>
 </div>
 
 
@@ -83,25 +92,27 @@
 <!-- CART -->
 <div id="cart-dropdown" class="cart-dropdown">
   <button id="close-cart" class="close-cart">✖</button>
+
   <h3>Your Cart</h3>
+
   <div id="cart-items"></div>
   <h4 id="cart-total">Total: ₦0</h4>
 
-  <!-- Payment Inputs -->
-  <div class="payment-inputs">
-    <label for="account-name">Account Name</label>
-    <input type="text" id="account-name" placeholder="Enter your name" required />
+  <!-- PAYMENT FORM -->
+  <form id="checkout-form">
 
-    <label for="account-number">Account Number</label>
-    <input type="text" id="account-number" placeholder="Enter account number" required />
+    <div class="payment-inputs">
+      <label>Account Number</label>
+      <input type="text" id="account-number" required />
 
-    <label for="account-password">Password</label>
-    <input type="password" id="account-password" placeholder="Enter password" required />
-  </div>
-  <button id="clear-cart">Clear Cart</button>
+      <label>Password</label>
+      <input type="password" id="account-password" required />
+    </div>
 
+    <button type="button" id="clear-cart">Clear Cart</button>
+    <button type="submit" id="pay-btn">Pay</button>
 
-  <button id="pay-btn">Pay</button>
+  </form>
 </div>
 
 
@@ -109,3 +120,5 @@
 <script src="/BIKADE-BUY&RENT.js"></script>
 </body>
 </html>
+
+

@@ -9,7 +9,7 @@
 <body>
 
   <div class="overlay">
-    <form class="sec-81" action="#" method="POST">
+    <form class="sec-81" id="signupForm">
       <h2>Sign Up</h2>
 
       <!-- Name & Email -->
@@ -19,6 +19,7 @@
           name="fullname"
           placeholder="Full Name"
           required
+          id="name"
         />
 
         <input
@@ -26,6 +27,7 @@
           name="email"
           placeholder="Email Address"
           required
+          id="email"
         />
       </div>
 
@@ -36,6 +38,7 @@
           name="password"
           placeholder="Enter Password"
           required
+          id="password"
         />
       </div>
 
@@ -45,11 +48,12 @@
       <!-- Already have an account -->
       <p class="form-footer">
         Already have an account?
-        <a href="signin.html">Sign in</a>
+        <a href="/forms/sign-in.html">Sign in</a>
       </p>
 
     </form>
   </div>
 
+  <script src="/forms/sign-up.js"></script>
 </body>
 </html>

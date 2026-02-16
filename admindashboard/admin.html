@@ -16,7 +16,7 @@
     <div class="admin-link" data-section="products">Products</div>
     <div class="admin-link" data-section="post-product">Post Product</div>
     <div class="admin-link" data-section="users">Users</div>
-    <div class="admin-link logout">Logout</div>
+    <div class="admin-link-logout">Logout</div>
   </div>
 
   <!-- MAIN -->
@@ -27,17 +27,24 @@
     <section id="dashboard" class="admin-section">
       <div class="admin-card">
         <h3>Admin Information</h3>
-        <p><strong>Name:</strong> Angelo</p>
-        <p><strong>Role:</strong> Administrator</p>
+        <p><strong>Name:</strong> <span id="admin-name"></span></p>
+        <p><strong>Role:</strong> <span id="admin-role"></span></p>
+
         <p><strong>Status:</strong> Active</p>
       </div>
 
       <div class="admin-card">
+        <h3>this is to inform the admin that when posting
+           an item he should go to imgbb to uplaod an image
+           to get a link to it before pasting it in the image url eg:https://i.ibb.co/mb.jpg </h3>
+      </div>
+
+      <!-- <div class="admin-card">
         <h3>Statistics</h3>
         <p>Total Products: <span id="stat-products">0</span></p>
         <p>Total Orders: 0</p>
         <p>Total Users: 0</p>
-      </div>
+      </div> -->
     </section>
 
     <!-- PRODUCTS -->
@@ -67,13 +74,24 @@
       <p id="post-result"></p>
     </section>
 
-    <!-- USERS -->
+    <!-- USERS -->    
     <section id="users" class="admin-section hidden">
-      <h3>Users</h3>
-      <p>Users data will come from backend.</p>
+      <h3>Users will be displayed here</h3>
+
+      <div id="admin-users-table">
+      <div class="users-header">
+        <span>Name</span>
+        <span>Email</span>
+        <span>Role</span>
+        <!-- <span>Action</span> -->
+      </div>
+      </div>
     </section>
 
   </div>
+
+
+
 
   <script src="/admindashboard/admin.js"></script>
 </body>
